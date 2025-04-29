@@ -1,0 +1,16 @@
+#robotsuite
+conda create -n robomsuite python=3.10
+conda activate robosuite
+git clone https://github.com/ARISE-Initiative/robosuite.git
+cd robosuite
+pip3 install -r requirements.txt
+pip3 install -r requirements-extra.txt
+conda install llvmlite
+
+#robotmimic
+conda install pytorch torchvision -c pytorch
+cd <PATH_TO_YOUR_INSTALL_DIRECTORY>
+git clone https://github.com/ARISE-Initiative/robomimic.git
+cd robomimic
+pip install -e .
+
